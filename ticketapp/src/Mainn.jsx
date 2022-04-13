@@ -6,7 +6,7 @@ import Create from './pages/Create';
 
 export default function Mainn(props){
     const [data, setData] = useState([]); //Data to display
-    
+
     //Function to get new input and push to the existing data
     const addData = (log) => {
       let logs = [...data, log];
@@ -22,8 +22,8 @@ export default function Mainn(props){
               </div>
                <div>
                <Routes>
+               <Route path="/create" element={<Create addData = {addData} />}/>
                 <Route index element={<Ticket className="ticket" ticket={data} />} />
-                <Route path="/create" element={<Create className="create" addData = {addData} />}/>
                </Routes>
                </div>
           </Router>
