@@ -4,7 +4,7 @@ const Ticket = (props) =>{
       
   //To monitor ticket status..
       const [isstatus, setIsStatus] = useState("Pending");
-      console.log(props.ticket)
+     
       
     return(
         <div className={props.className}>
@@ -23,16 +23,16 @@ const Ticket = (props) =>{
         </tr>
         </thead> 
         <tbody className="tableBody">
-        {props.ticket.map((data,index) => {
+        {props.ticket.map((data,index,i) => {
         return (
                 <tr key={index}>
                 <td>{data[3]}</td>
                 <td>{data[0]}</td>
                 <td>{data[1]}</td>
                 <td>{data[2]}</td>
-                <td>{data[4]}</td>
-                <td>{data[5]}</td>
-                <td>{parseInt(data[4]) + parseInt(data[5])}</td>
+                <td>{"$" + data[4]}</td>
+                <td>{"$" + data[5]}</td>
+                <td>{"$" + parseInt(data[4]) + parseInt(data[5])}</td>
                 <td>{data[6]}</td>
                 <td>{isstatus}</td>
                 <input type="submit" value="APPROVE" onClick={()=> setIsStatus("Approved")}/>
