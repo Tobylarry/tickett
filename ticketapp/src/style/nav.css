@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Poppins:wght@500;700&family=Press+Start+2P&family=Public+Sans:wght@100&family=Ultra&display=swap');
+
+.nav{
+    background: rgb(1, 1, 45);
+    color:white;
+    padding:15px;
+}
+.nav .inner{
+    display:flex;
+    justify-content:space-between;
+    justify-items:center;
+    align-items:center;
+}
+.nav img{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    margin-right:20px;
+   
+}
+.nav .logo{
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing:5px;
+    font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Public Sans', sans-serif;
+font-family: 'Ultra', serif;
+}

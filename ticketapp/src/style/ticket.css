@@ -1,0 +1,77 @@
+
+.ticket{
+    margin-left:230px;
+    margin-top:50px;
+}
+
+.ticket .tablee, th, td{
+    border: 1px solid;
+}
+.ticket .tablee .tableHead th{
+    font-size:14px;
+    padding:10px 13px;
+    text-align:center;
+}
+
+.ticket  .tablee .tableBody td{
+    text-align:center;
+    padding:10px 20px;
+    font-size:12px;
+}
+.ticket .tablee .tableBody input{
+      padding:5px 10px;
+      font-size: 11px;
+      margin:8px 8px 11px 8px;
+}
+
+@media screen and (max-width: 650px) {
+    .ticket{
+        margin-top:50px;
+        padding:20px;
+        margin-left:0px;
+        margin: 30 auto;
+        width:90%;
+    }
+    .ticket .tablee .tableHead th{
+        font-size:9.6px;
+        padding:2px 5px;
+        text-align:center;
+    }
+    
+    .ticket  .tablee .tableBody td{
+        text-align:center;
+        padding:2px 5px;
+        font-size:9.6px;
+    }
+    .ticket .tablee .tableBody input{
+          padding:2px 5px;
+          font-size: 9.6px;
+          margin:4px 4px 6px 4px;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width:1000px){
+    .ticket{
+        margin-top:50px;
+        padding:25px;
+        margin-left:0px;
+        margin: 30 auto;
+        width:90%;
+    }
+    .ticket .tablee .tableHead th{
+        font-size:14px;
+        padding:5px 10px;
+        text-align:center;
+    }
+    
+    .ticket  .tablee .tableBody td{
+        text-align:center;
+        padding:5px 10px;
+        font-size:14px;
+    }
+    .ticket .tablee .tableBody input{
+          padding:5px 10px;
+          font-size: 14px;
+          margin: 8px 8px 11px 8px;
+    }
+}

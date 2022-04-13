@@ -1,0 +1,7 @@
+@import 'nav.css';
+@import 'mainn.css';
+@import 'left.css';
+@import 'create.css';
+@import 'ticket.css';
+
+body{margin:0; padding:0;}
